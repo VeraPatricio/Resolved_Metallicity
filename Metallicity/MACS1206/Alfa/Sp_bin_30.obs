@@ -1,0 +1,12 @@
+      Line      Flux     Error
+---------- --------- ---------
+ [OII]3727       nan       nan
+   [NeIII]       nan       nan
+        H7       nan       nan
+        Hd       nan       nan
+        Hg       nan       nan
+        Hb       nan       nan
+[OIII]4959       nan       nan
+[OIII]5007       nan       nan
+        Ha 4.157e-18  2.88e-19
+ [NII]6584 1.151e-18 1.809e-19

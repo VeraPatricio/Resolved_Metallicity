@@ -1,0 +1,112 @@
+J/ApJ/827/74    [NII]/H{alpha} ratio in galaxies with KMOS^3D^    (Wuyts+, 2016)
+================================================================================
+The evolution of metallicity and metallicity gradients from z=2.7 to 0.6
+with KMOS-3D.
+    Wuyts E., Wisnioski E., Fossati M., Forster Schreiber N.M., Genzel R.,
+    Davies R., Mendel J.T., Naab T., Rottgers B., Wilman D.J., Wuyts S.,
+    Bandara K., Beifiori A., Belli S., Bender R., Brammer G.B., Burkert A.,
+    Chan J., Galametz A., Kulkarni S.K., Lang P., Lutz D., Momcheva I.G.,
+    Nelson E.J., Rosario D., Saglia R.P., Seitz S., Tacconi L.J., Tadaki K.-I.,
+    Ubler H., van Dokkum P.
+   <Astrophys. J., 827, 74-74 (2016)>
+   =2016ApJ...827...74W    (SIMBAD/NED BibCode)
+================================================================================
+ADC_Keywords: Galaxies, spectra ; Abundances ; Redshifts
+Keywords: galaxies: abundances; galaxies: evolution; galaxies: high-redshift
+
+Abstract:
+    We present measurements of the [NII]/H{alpha} ratio as a probe of
+    gas-phase oxygen abundance for a sample of 419 star-forming galaxies
+    at z=0.6-2.7 from the KMOS^3D^ near-IR multi-integral field unit (IFU)
+    survey. The mass-metallicity relation (MZR) is determined consistently
+    with the same sample selection, metallicity tracer, and methodology
+    over the wide redshift range probed by the survey. We find good
+    agreement with long-slit surveys in the literature, except for the
+    low-mass slope of the relation at z~2.3, where this sample is less
+    biased than previous samples based on optical spectroscopic redshifts.
+    In this regime we measure a steeper slope than some literature
+    results. Excluding the contribution from active galactic nuclei from
+    the MZR reduces sensitivity at the high-mass end, but produces
+    otherwise consistent results. There is no significant dependence of
+    the [NII]/H{alpha} ratio on star formation rate at fixed redshift and
+    stellar mass. The IFU data allow spatially resolved measurements of
+    [NII]/H{alpha}, from which we can infer abundance gradients for 180
+    galaxies, thus tripling the current sample in the literature. The
+    observed gradients are on average flat, with only 15 gradients
+    statistically offset from zero at >3{sigma}. We have modeled the
+    effect of beam smearing, assuming a smooth intrinsic radial gradient
+    and known seeing, inclination, and effective radius for each galaxy.
+    Our seeing-limited observations can recover up to 70% of the intrinsic
+    gradient for the largest, face-on disks, but only 30% for the smaller,
+    more inclined galaxies. We do not find significant trends between
+    observed or corrected gradients and any stellar population, dynamical,
+    or structural galaxy parameters, mostly in agreement with existing
+    studies with much smaller sample sizes. In cosmological simulations,
+    strong feedback is generally required to produce flat gradients at
+    high redshift.
+
+Description:
+    The galaxies analyzed here are taken from the first 2yr of the
+    KMOS^3D^ survey, which covers observations up to 2015 April. The
+    survey is described in detail by Wisnioski+ (2015ApJ...799..209W).
+    KMOS^3D^ is a 5yr GTO survey with the multi-object near-IR integral
+    field spectrograph KMOS at the Very Large Telescope (VLT).
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName      Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe            80        .   This file
+table3.dat        55      259   Target properties for all galaxies where
+                                 the [NII]/H{alpha} ratio could be measured
+--------------------------------------------------------------------------------
+
+See also:
+ J/A+A/594/A77   : KMOS star-forming gal. Halpha data cubes (Di Teodoro+, 2016)
+ J/ApJ/822/42    : z~3.3 star-forming galaxies NIR spectra (Onodera+, 2016)
+ J/ApJ/817/10    : Star-forming z~2.1 galaxy metallicities (Grasshorn Gebhardt+,
+                                                                      2016)
+ J/ApJS/220/12   : FMOS-COSMOS survey III. 0.7<z<2.5 galaxies (Silverman+, 2015)
+ J/AJ/148/137    : Merging galaxies in COSMOS to z~1 (Lackner+, 2014)
+ J/ApJS/214/24   : 3D-HST+CANDELS catalog (Skelton+, 2014)
+ J/ApJ/768/74    : PHIBSS: CO obs. of star-forming galaxies (Tacconi+, 2013)
+ J/ApJ/765/140   : Stacked spectra of SDSS star forming gal. (Andrews+, 2013)
+ J/ApJS/203/24   : Structural param. of galaxies in CANDELS (van der Wel+, 2012)
+ J/A+A/532/A90   : PACS Evolutionary Probe (PEP-DR1) catalogs (Lutz+, 2011)
+ J/ApJ/706/1364  : SINS survey of high-redshift gal. (Forster Schreiber+, 2009)
+ J/MNRAS/358/521 : Grid of chemical evolution models for galaxies (Molla+, 2005)
+ J/AJ/116/2805   : H II regions in spiral galaxies (Van Zee+, 1998)
+
+Byte-by-byte Description of file: table3.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  3  I3    ---     Seq       [1/259] Running sequence number
+   5-  9  F5.3  ---     z         [0.7/2.6] Redshift
+  11- 15  F5.2 [Msun]   logM*     [8.5/11.4] Stellar mass
+  17- 20  F4.1  kpc     re        [0.5/16]? Effective radius r_e_
+  22- 26  F5.1 Msun/yr  SFR       [0.2/397.8] H{alpha} star formation rate (1)
+      28  A1    ---   l_[NII]/Ha  Limit flag on [NII]/Ha
+  30- 33  F4.2  ---     [NII]/Ha  [0.08/1.4] Integrated [NII]/H{alpha} ratio
+  35- 38  F4.2  ---   e_[NII]/Ha  [0/0.3]? [NII]/Ha uncertainty
+  40- 45  F6.3  ---     dN2/dr    [-0.2/0.2]? {Delta}N2/{Delta}r value,
+                                   in units of dex/kpc (2)
+  47- 51  F5.3  ---   e_dN2/dr    [0.002/0.08]? dN2/dr uncertainty
+  53- 55  F3.1  ---     BCF       [1.3/6.2]? Multiplicative beam-smearing
+                                   correction factor for the N2 gradient (3)
+--------------------------------------------------------------------------------
+Note (1): H{alpha}-based SFR corrected for dust extinction using the SED-derived
+          reddening and accounting for additional extinction of the nebular
+          lines following Wuyts et al. (2013ApJ...779..135W).
+Note (2): Observed gradient in [NII]/H{alpha}, excluding the nuclear region for
+          AGN-flagged targets. Reported only when measurable.
+Note (3): Multiplicative beam-smearing correction factor for the N2 gradient,
+          derived from simple analytical models assuming a smooth linear
+          intrinsic radial gradient.
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+
+================================================================================
+(End)                                    Emmanuelle Perret [CDS]    24-Nov-2016

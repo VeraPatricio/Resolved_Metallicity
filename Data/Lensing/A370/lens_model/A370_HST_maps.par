@@ -1,0 +1,102 @@
+#Thu Apr  7 07:49:12 2016
+
+#Image plane optimization
+#Chi2tot(dof=23): 74.5317
+#Chi2pos: 74.532
+#Chi2_vel: 0.000
+#Chi2_mass: 0.000
+#Chi2formex: 0.000
+#Chi2formey: 0.000
+#Chi2l: 0.000
+#log(Evidence) : -127.566
+#8.0 z:3.143 dlsds:0.774 
+#11.0 z:9.502 dlsds:0.843 
+#12.0 z:2.788 dlsds:0.762 
+#n_Warning: 0
+runmode
+	reference     3 39.971340 -1.582260
+	0image     1 mul_a370_spec.cat
+        0dpl 1 1500 0.725 dplx_arc.fits dply_arc.fits
+        0ampli 5 1500 0.725 kappa.fits
+        0shear 4 1500 0.725 gamma2arc.fits
+        0pixel 2 1200 simuarc_head.fits
+	end
+grille
+	nombre      128
+	polaire     0
+	nlentille   1
+	end
+image
+	z_m_limit 1 8.0 0 3.143  0.000  0.0000 
+	z_m_limit 1 11.0 0 9.502  0.000  0.0000 
+	z_m_limit 1 12.0 0 2.788  0.000  0.0000 
+	end
+cleanlens
+	cleanset 1 0.725
+	0imframe 3 A370_F105w.fits
+	0sframe SP_A370_F105W.fits
+	0imframe 3 A370_F125w.fits
+	0sframe SP_A370_F125W.fits
+	0imframe 3 A370_F140w.fits
+	0sframe SP_A370_F140W.fits
+	0imframe 3 A370_F160w.fits
+	0sframe SP_A370_F160W_head_bigger.fits
+	imframe 3 A370_F435w.fits
+	sframe SP_A370_F435W_newhead.fits
+	0sframe SP_A370_F435W_reg3.fits
+	0imframe 3 A370_F606w.fits
+	0sframe SP_A370_F606W.fits
+	0imframe 3 A370_F814w_new_header.fits
+	0sframe SP_A370_F814W_reg3.fits
+	ncont 1 clean.fits
+	c_image A370_center_HST_head.dwcs
+	contour 1 A370_HST_head.dwcs
+    0c_image centerMUSEhead.dwcs
+    0contour 1 MUSEhead.dwcs
+    0c_image center_reg3.dwcs
+    0contour 1 reg3.dwcs
+	s_n 400
+	s_n 1000
+	echant 5
+	s_echant 4
+	end
+potentiel O1
+	profil       17
+        gamma1map 3 gamma1norm.fits
+        gamma2map 3 gamma2norm.fits
+        kappamap  3 kappa.fits
+        dplxmap  3 dplx_norm_alignhead.fits
+        dplymap  3 dply_norm_alignhead.fits
+        potenmap  3 zero.fits
+	z_lens     0.3750
+	end
+cline
+	nplan    0 0.725
+	dmax     80.000
+	algorithm   MARCHINGSQUARES
+	limitHigh   1.0
+	limitLow    0.1
+	end
+grande
+	iso         0 0 0.000 0.000 0.000
+	name        best
+	profil      0 0
+	contour     1 0
+	large_dist  0.300
+	end
+cosmologie
+	model       1
+	H0        70.000
+	omegaM    0.300
+	omegaX    0.700
+	omegaK    0.
+	wX        -1.000
+	wa        0.000
+	end
+champ
+	xmin     -15.000
+	xmax     15.000
+	ymin     -15.000
+	ymax     15.000
+	end
+fini

@@ -1,0 +1,6 @@
+rm pot.dat
+rm para.out
+rm dummy.fits
+rm clump.dat
+rm imult.fits
+rm erreur.fits

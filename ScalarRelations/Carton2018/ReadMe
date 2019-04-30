@@ -1,0 +1,108 @@
+J/MNRAS/478/4293 0.1<z<0.8 galaxies gas-phase metallicity grad.  (Carton+, 2018)
+================================================================================
+First gas-phase metallicity gradients of 0.1<z<0.8 galaxies with MUSE.
+    Carton D., Brinchmann J., Contini T., Epinat B., Finley H., Richard J.,
+    Patricio V., Schaye J., Nanayakkara T., Weilbacher P.M., Wisotzki
+    <Mon. Not. R. Astron. Soc. 478, 4293 (2018)>
+    =2018MNRAS.478.4293C        (SIMBAD/NED BibCode)
+================================================================================
+ADC_Keywords: Galaxy catalogs ; Abundances ; Redshifts ; Interstellar medium
+Keywords: galaxies: evolution - galaxies: abundances - galaxies: ISM
+
+Abstract:
+    Galaxies at low-redshift typically possess negative gas-phase
+    metallicity gradients (centres more metal-rich than their outskirts).
+    Whereas, it is not uncommon to observe positive metallicity gradients
+    in higher-redshift galaxies (z<0.6). Bridging these epochs, we
+    present gas-phase metallicity gradients of 84 star-forming galaxies
+    between 0.08<z<0.84. Using the galaxies with reliably determined
+    metallicity gradients, we measure the median metallicity gradient to
+    be negative (-0.039^+0.007^_-0.009_dex/kpc). Underlying this,
+    however, is significant scatter: (8+/-3)% [7] of galaxies have
+    significantly positive metallicity gradients, (38+/-5)% [32] have
+    significantly negative gradients, (31+/-5)% [26] have gradients
+    consistent with being flat. (The remaining (23+/-5)% [19] have
+    unreliable gradient estimates.) We notice a slight trend for a more
+    negative metallicity gradient with both increasing stellar mass and
+    increasing star formation rate (SFR). However, given the potential
+    redshift and size selection effects, we do not consider these trends
+    to be significant. Indeed, once we normalize the SFR relative to that
+    of the main sequence, we do not observe any trend between the
+    metallicity gradient and the normalized SFR. This is contrary to
+    recent studies of galaxies at similar and higher redshifts. We do,
+    however, identify a novel trend between the metallicity gradient of a
+    galaxy and its size. Small galaxies (rd<3kpc) present a large
+    spread in observed metallicity gradients (both negative and positive
+    gradients). In contrast, we find no large galaxies (rd > 3 kpc) with
+    positive metallicity gradients, and overall there is less scatter in
+    the metallicity gradient amongst the large galaxies. These large
+    (well-evolved) galaxies may be analogues of present-day galaxies,
+    which also show a common negative metallicity gradient.
+
+Description:
+    Using MUSE data we present metallicity gradients for a sample of 84
+    intermediate-redshift galaxies (0.1<~z<~0.8). We infer the true
+    metallicity gradient using a forward-modelling technique that corrects
+    for the seeing effects. We search for trends of the observed
+    metallicity gradient with global properties such as galaxy mass, size,
+    and SFR.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName      Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe            80        .   this file
+tablea1.dat      169       84   Metallicity, mass, SFR and morphological
+                                 properties
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: tablea1.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units      Label   Explanations
+--------------------------------------------------------------------------------
+   1-  5  A5    ---        Field   Targeted field (1)
+   7- 14  I8    ---        ID      ID number of galaxy within field (1)
+  16- 21  F6.3  [-]        logZ0   [-0.714/0.696] Derived central
+                                    metallicity (2)
+  23- 28  F6.3  [-]      b_logZ0   [-0.854/-0.004] -1 sigma error on logZ0 (3)
+  30- 34  F5.3  [-]      B_logZ0   [0.002/0.5] ? +1 sigma error on logZ0 (4)
+  36- 42  F7.4 kpc-1       dlogZ   [-0.2615/0.2406] Derived metallicity
+                                    gradient (2)
+  44- 50  F7.4 kpc-1     b_dlogZ   [-0.3773/-0.0009] -1 sigma error
+                                    on dlogZ (3)
+  52- 57  F6.4 kpc-1     B_dlogZ   [0.0009/0.2314] +1 sigma error on dlogZ (4)
+  59- 68  A10   ---        Grad    Metallicity gradient classification
+  70- 75  F6.3 [Msun]      Mass    [7.002/10.6] ? Stellar mass derived from
+                                    MAGPHYS (2)
+  77- 82  F6.3 [Msun]    b_Mass    [-0.315/0.0] -1 sigma error on Mass (3)
+  84- 88  F5.3 [Msun]    B_Mass    [0.0/0.365] +1 sigma error on Mass (4)
+  90- 95  F6.3 [Msun/yr]   SFR     [-2.254/1.42] SFR derived from
+                                    emission lines (2)
+  97-102  F6.3 [Msun/yr] b_SFR     [-0.573/-0.006] -1 sigma error on SFR (3)
+ 104-108  F5.3 [Msun/yr] B_SFR     [0.008/0.673] +1 sigma error on SFR (4)
+ 110-115  F6.3  ---        dSFR    [-0.8/1.167] Galaxy SFR normalized relative
+                                    to a galaxy with identical mass on the main
+                                    sequence
+ 117-121  F5.3  ---      e_dSFR    [0.017/0.61] 1 sigma error on dSFR
+ 123-132  F10.6 deg        RAdeg   [53/338.3] Right ascension of galaxy
+                                    centre (J2000)
+ 134-143  F10.6 deg        DEdeg   [-60.58/2.08] Declination of galaxy
+                                    centre (J2000)
+ 145-150  F6.4  ---        z       [0.0771/0.8441] Redshift derived from MUSE
+                                    spectra
+ 152-155  F4.2  kpc        rd      [0.15/6.71] Exponential disc scale length
+ 157-161  F5.2  deg        Inc     [0.58/70.0] Galaxy inclination
+ 163-169  F7.2  deg        PA      [-88.32/144.0] Position angle of galaxy's
+                                    major axis on the sky, North=0, East=90
+--------------------------------------------------------------------------------
+Note (1): Field and ID can be combined to produce a unique key
+Note (2): Median value
+Note (3): -1 sigma is defined by the 16th percentile
+Note (4): +1 sigma is defined by the 84th percentile
+--------------------------------------------------------------------------------
+
+Acknowledgements:
+    David Carton, david.carton(at)univ-lyon1.fr
+
+================================================================================
+(End)                                        Patricia Vannier [CDS]  17-May-2018

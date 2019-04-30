@@ -1,0 +1,79 @@
+#Thu Apr  7 07:49:12 2016
+
+#Image plane optimization
+#Chi2tot(dof=23): 74.5317
+#Chi2pos: 74.532
+#Chi2_vel: 0.000
+#Chi2_mass: 0.000
+#Chi2formex: 0.000
+#Chi2formey: 0.000
+#Chi2l: 0.000
+#log(Evidence) : -127.566
+#8.0 z:3.143 dlsds:0.774 
+#11.0 z:9.502 dlsds:0.843 
+#12.0 z:2.788 dlsds:0.762 
+#n_Warning: 0
+runmode
+	reference     3 39.971340 -1.582260
+	0image     1 mul_a370_spec.cat
+    0dpl 1 1500 0.725 dplx_arc.fits dply_arc.fits
+    0ampli 5 1500 0.725 kappa.fits
+    0shear 4 1500 0.725 gamma2arc.fits
+    0pixel 2 1200 simul_GALFIT_centre.fits
+    pixel 2 1200 simul_GALFIT_model.fits
+	end
+grille
+	nombre      128
+	polaire     0
+	nlentille   1
+	end
+image
+	z_m_limit 1 8.0 0 3.143  0.000  0.0000 
+	z_m_limit 1 11.0 0 9.502  0.000  0.0000 
+	z_m_limit 1 12.0 0 2.788  0.000  0.0000 
+	end
+cleanlens
+	cleanset 0 0.725
+	0sframe SP_GALFIT_centre.fits
+	sframe SP_GALFIT_model.fits
+	end
+potentiel O1
+	profil       17
+        gamma1map 3 lens_model/gamma1norm.fits
+        gamma2map 3 lens_model/gamma2norm.fits
+        kappamap  3 lens_model/kappa.fits
+        dplxmap  3 lens_model/dplx_norm_alignhead.fits
+        dplymap  3 lens_model/dply_norm_alignhead.fits
+        potenmap  3 lens_model/zero.fits
+	z_lens     0.3750
+	end
+cline
+	nplan    0 0.725
+	dmax     80.000
+	algorithm   MARCHINGSQUARES
+	limitHigh   1.0
+	limitLow    0.1
+	end
+grande
+	iso         0 0 0.000 0.000 0.000
+	name        best
+	profil      0 0
+	contour     1 0
+	large_dist  0.300
+	end
+cosmologie
+	model       1
+	H0        70.000
+	omegaM    0.300
+	omegaX    0.700
+	omegaK    0.
+	wX        -1.000
+	wa        0.000
+	end
+champ
+	xmin     -15.000
+	xmax     20.000
+	ymin     -25.000
+	ymax     10.000
+	end
+fini

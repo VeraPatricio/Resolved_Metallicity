@@ -1,0 +1,74 @@
+runmode
+	reference	3 39.971340 -1.582260 39.971340 -1.582260
+	end
+grille
+	nombre		128
+	polaire		0
+	nlentille	1
+	end
+image
+	z_m_limit	 1 8.0 0 3.143  0.000  0.0000 
+	z_m_limit	 1 11.0 0 9.502  0.000  0.0000 
+	z_m_limit	 1 12.0 0 2.788  0.000  0.0000 
+	end
+cleanlens
+	cleanset	1 0.725000
+	imframe	3 SP_HST/A370_F814w.fits
+	sframe	 SP_HST/SP_A370_F814w_reg3.fits
+	ncont	1 clean.fits
+	c_image	 center_reg3.dwcs
+	contour	1 reg3.dwcs
+	s_n	1000
+	echant	8
+	s_echant	5
+	end
+potentiel
+0
+	profil		17
+	gamma1map		lens_model/gamma1norm.fits
+	gamma2map		lens_model/gamma2norm.fits
+	kappamap		lens_model/kappa.fits
+	dplxmap		lens_model/dplx_norm_alignhead.fits
+	dplymap		lens_model/dply_norm_alignhead.fits
+	potenmap		lens_model/zero.fits
+	z_lens		0.375000
+	end
+cline
+	nplan		0
+	dmax		80.000000
+	algorithm		MARCHINGSQUARES
+	limitHigh		1.000000
+	limitLow		0.100000
+	end
+grande
+	iso	0 0 0.000000 0.000000 0.000000
+	name	best
+	profil	0 0
+	contour	1 0
+	large_dist	0.300000
+	end
+cosmologie
+	model	1
+	H0	70.000000
+	omegaM	0.300000
+	omegaX	0.700000
+	omegaK	0.000000
+	wX	-1.000000
+	wa	0.000000
+	kcourb	0.000000
+	end
+champ
+	xmin	-15.000000
+	xmax	15.000000
+	ymin	-15.000000
+	ymax	15.000000
+	end
+fini
+For z_s = 0.8000  DLS/DS:0.4748
+DLS:0.1717(lt) 735.28(Mpc) DOS:0.3616(lt) 1548.71(Mpc)
+DOL:0.2486(lt) 1064.85(Mpc) DOL_lum:0.4701(lt) 2013.23(Mpc)
+Mcrit:3.288749e-03 (10^12 Msol/kpc^2)
+Conversion Factor @ z = 0.375000, 1 arcsec == 5.163 kpc
+Number of Clumps: 1
+-------- Clump 1: External maps 
+ External maps
